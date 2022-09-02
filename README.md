@@ -9,7 +9,8 @@
 6. nginx 下载后需要 root 权限运行，即使用 sudo nginx 而不是 nginx 来运行。
 
 ### 用户权限问题
-azure购买时设置了公钥方式作为ssh链接认证，可以设为密码方式，但不知道为啥root用户的密码在哪设置找不到。使用 ```sudo su``` 来获取 root 用户权限
+azure购买时设置了公钥方式作为ssh链接认证，可以设为密码方式，但不知道为啥root用户的密码在哪设置找不到。使用 ```sudo su``` 来获取 root 用户权限  
+不知道为什么这台服务器没有设置 `$HOME` 路径，在 `/root/.profile`下添加 `export HOME=/root` 机器死了打不开。。。
 
 
 ### 时区问题
